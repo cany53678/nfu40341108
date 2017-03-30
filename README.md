@@ -17,9 +17,10 @@ def sinplot(flip=1):
 sinplot()
 plt.show()
 ```
-Homework--0330--pandas
+Homework--0330--
+[pandas](http://wiki.jikexueyuan.com/project/start-learning-python/311.html)
 
-```python
+```bat
 import pandas as pd
 from pandas import Series, DataFrame
 data = {"name":["yahoo","google","facebook"], "marks":[200,400,800], "price":[9, 3, 7]}
