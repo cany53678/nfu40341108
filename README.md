@@ -17,8 +17,17 @@ def sinplot(flip=1):
 sinplot()
 plt.show()
 ```
-
 Homework--0330--pandas
+
+```python
+import pandas as pd
+from pandas import Series, DataFrame
+data = {"name":["yahoo","google","facebook"], "marks":[200,400,800], "price":[9, 3, 7]}
+f1 = DataFrame(data)
+print f1
+```
+
+Example--0330--pandas
 
 
 ```bat
@@ -49,7 +58,6 @@ print(df_friendsGroup.ix[5])
 print("印出row5~row9")
 print(df_friendsGroup[5:10])
 ```  
-
 
 ## Table of Contents
 4. [Linear Algebra](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/linear_algebra.py)
