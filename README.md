@@ -60,5 +60,53 @@ print("印出row5~row9")
 print(df_friendsGroup[5:10])
 ```  
 
+Example--0406--Probability
+
+```bat
+def plot_normal_pdfs(plt):
+    xs = [x / 10.0 for x in range(-50, 50)]
+    plt.plot(xs, [normal_pdf(x, sigma=1) for x in xs], '-', label='mu=0,sigma=1')
+    plt.plot(xs, [normal_pdf(x, sigma=0.1) for x in xs], '--', label='mu=0,sigma=0.1')
+    plt.plot(xs, [normal_pdf(x, sigma=0.5) for x in xs], ':', label='mu=0,sigma=0.5')
+    plt.plot(xs, [normal_pdf(x, mu=-1) for x in xs], '-.', label='mu=-1,sigma=1')
+    plt.plot(xs, [normal_pdf(x, mu=3, sigma=0.5) for x in xs], '-.', label='mu=3,sigma=0.5')
+    plt.plot(xs, [normal_pdf(x, mu=-2) for x in xs], '-.', label='mu=-2,sigma=1')
+    plt.legend()
+    plt.show()
+    
+a1=0
+    a2=0
+    aboth=0
+    n=10000
+    random.seed(2)
+    for _ in range(n):
+        get1 = random_ball()
+        get2 = random_ball()
+        if get1=="B":
+            a1 +=1
+        if get1=="B" and get2=="B":
+            aboth +=1
+        if get2=="B":
+            a2 +=1
+
+    print "P(both):",aboth/n
+    print "P(get1):", a1 / n
+    print "P(get2):", a2 / n
+    print "P(get1,get2):", a1*a2/n / n
+    print "P(get1|get2)=p(both)/p(get2)=",(aboth/n)/(a2/n)
+    print "P(get1|get2)=P(get1,get2)/p(get2)=P(get1)p(get2)/p(get2)=P(get1)",  (a1 / n)
+```  
+Example--0406--Hypothesis and Inference
+```
+    p=0.99
+    a=0.46
+    mu_0, sigma_0 = normal_approximation_to_binomial(1000, a)
+    print("mu_0", mu_0)
+    print("sigma_0", sigma_0)
+    print("normal_two_sided_bounds("+str(p)+", mu_0, sigma_0)", normal_two_sided_bounds(p, mu_0, sigma_0))
+    print
+``` 
 ## Table of Contents
 4. [Linear Algebra](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/linear_algebra.py)
+6. [Probability](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/probability.py)
+7. [Hypothesis and Inference](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/hypothesis_and_inference.py)
