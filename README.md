@@ -106,7 +106,21 @@ Example--0406--Hypothesis and Inference
     print("normal_two_sided_bounds("+str(p)+", mu_0, sigma_0)", normal_two_sided_bounds(p, mu_0, sigma_0))
     print
 ``` 
+
+HOMEWORK1--0413--gradient-descent
+```
+   範例-1 THE IRIS 鳶尾花資料集
+``` 
+
+HOMEWORK2--0413--gradient-descent
+```
+   範例-2 標準化數據模型
+```
 ## Table of Contents
-4. [Linear Algebra](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/linear_algebra.py)
-6. [Probability](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/probability.py)
-7. [Hypothesis and Inference](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/hypothesis_and_inference.py)
+CH4. [Linear Algebra](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/linear_algebra.py)
+
+CH6. [Probability](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/probability.py)
+
+CH7. [Hypothesis and Inference](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/hypothesis_and_inference.py)
+
+CH8. [Gradient Descent](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/gradient_descent.py)
