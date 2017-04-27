@@ -10,6 +10,6 @@ with open('email.txt', 'r') as f:
  domain_counts = Counter(get_domain(line.strip())
  for line in f
  if "@" in line)
- #資料理有@就放進line處理
+ #資料理有'@'就放進line處理
 
  print domain_counts
