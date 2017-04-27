@@ -1,4 +1,5 @@
 import requests, json
+
 serialized = """{ "title" : "Data Science Book",
  "author" : "Joel Grus",
  "publicationYear" : 2014,
